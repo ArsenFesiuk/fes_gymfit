@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>UI/UX task</title>
+</head>
+
+<body>
+<form th:action="@{/login}" method="post">
+<div class="wrapper green-background login">
+    <div class="register-form ">
+        <div class="container ">
+            <h1 class="register-form__heading">USER LOGIN</h1>
+            <div class="input__container input__icon--left">
+                <input class="input" placeholder="Email" type="email" name="username">
+                <div class="input__icon ">
+                    <i class="fa fa-user"></i>
+                </div>
+            </div>
+            <div class="input__container">
+                <input class="input" placeholder="Password" type="password" name="password">
+                <div class="input__icon">
+                    <i class="fa fa-lock"></i>
+                </div>
+            </div>
+            <input type="submit" value="Login"/>
+        </div>
+    </div>
+</div>
+</form>
+</body>
+</html>
+
